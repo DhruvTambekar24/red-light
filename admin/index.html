@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Control</title>
+</head>
+<body>
+    <h1>Red Light, Green Light Admin Panel</h1>
+    <button onclick="toggleLight('green')">Green Light</button>
+    <button onclick="toggleLight('red')">Red Light</button>
+
+    <script>
+        const toggleLight = (light) => {
+            fetch(`http://localhost:3000/toggle/${light}`)
+                .then(response => response.text())
+                .then(data => alert(data))
+                .catch(error => console.error("Error:", error));
+        };
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Control</title>
+</head>
+<body>
+    <h1>Red Light, Green Light - Admin Panel</h1>
+    <button onclick="toggleLight('green')">Green Light</button>
+    <button onclick="toggleLight('red')">Red Light</button>
+
+    <script>
+        const toggleLight = (light) => {
+            fetch(`http://localhost:3000/toggle/${light}`)
+                .then(response => response.text())
+                .then(data => alert(data))
+                .catch(error => console.error("Error:", error));
+        };
+    </script>
+</body>
+</html>
